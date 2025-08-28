@@ -1,8 +1,5 @@
 
-
-
-
-function FirstMail({backArrow, downloadButton, rubbishButton, rateStarButton, zoomImage,backButton, toggleSelectMail}) {
+function PatrickMail({backArrow, downloadButton, rubbishButton, rateStarButton, patrickpic ,backButton, toggleSelectMail}) {
     return (
       <main className="email-view">
         <nav className="email-toolbar">
@@ -22,21 +19,21 @@ function FirstMail({backArrow, downloadButton, rubbishButton, rateStarButton, zo
           </ul>
           <div className="space"></div>
           <div>
-            <p>1 of 5</p>
+            <p>5 of 5</p>
             <button>&lt;</button>
             <button>&gt;</button>
           </div>
         </nav>
         <article className="email-content">
           <div className="title">
-            <h1>Cloud Recording - Nicolas Marcoras Personal Meeting Room is available</h1>
+            <h1>Updated invitation: Coding chat with Nico</h1>
           </div>
           <header className="email-content--header">
             <div className="avatar"></div>
             <div className="email-info">
               <div className="sender-info">
-                <h2>Zoom</h2>
-                <em>&lt;no-reply@zoom.com&gt;</em>
+                <h2>Coding chat with Nico</h2>
+                <em>&lt;patrick@patrick.com&gt;</em>
               </div>
               <div className="user-info">
                 <p>
@@ -71,7 +68,7 @@ function FirstMail({backArrow, downloadButton, rubbishButton, rateStarButton, zo
           </header>
           <section className="email-body">
             <div className="content">
-              <img src={zoomImage} alt="Zoom logo" />
+              <img src={patrickpic} alt="Calendly for teams" />
             </div>
           </section>
           <section className="email-actions">
@@ -83,4 +80,4 @@ function FirstMail({backArrow, downloadButton, rubbishButton, rateStarButton, zo
     )
   }
 
-  export default FirstMail
+  export default PatrickMail

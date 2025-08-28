@@ -1,8 +1,5 @@
 
-
-
-
-function FirstMail({backArrow, downloadButton, rubbishButton, rateStarButton, zoomImage,backButton, toggleSelectMail}) {
+function NotionMail({backArrow, downloadButton, rubbishButton, rateStarButton, booleanImage ,backButton, toggleSelectMail}) {
     return (
       <main className="email-view">
         <nav className="email-toolbar">
@@ -22,21 +19,21 @@ function FirstMail({backArrow, downloadButton, rubbishButton, rateStarButton, zo
           </ul>
           <div className="space"></div>
           <div>
-            <p>1 of 5</p>
+            <p>3 of 5</p>
             <button>&lt;</button>
             <button>&gt;</button>
           </div>
         </nav>
         <article className="email-content">
           <div className="title">
-            <h1>Cloud Recording - Nicolas Marcoras Personal Meeting Room is available</h1>
+            <h1>You received an update in Boolean</h1>
           </div>
           <header className="email-content--header">
             <div className="avatar"></div>
             <div className="email-info">
               <div className="sender-info">
                 <h2>Zoom</h2>
-                <em>&lt;no-reply@zoom.com&gt;</em>
+                <em>&lt;no-reply@boolean.co.uk&gt;</em>
               </div>
               <div className="user-info">
                 <p>
@@ -71,7 +68,7 @@ function FirstMail({backArrow, downloadButton, rubbishButton, rateStarButton, zo
           </header>
           <section className="email-body">
             <div className="content">
-              <img src={zoomImage} alt="Zoom logo" />
+              <img src={booleanImage} alt="Boolean logo" />
             </div>
           </section>
           <section className="email-actions">
@@ -83,4 +80,4 @@ function FirstMail({backArrow, downloadButton, rubbishButton, rateStarButton, zo
     )
   }
 
-  export default FirstMail
+  export default NotionMail

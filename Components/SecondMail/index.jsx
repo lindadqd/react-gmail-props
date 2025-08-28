@@ -2,7 +2,7 @@
 
 
 
-function FirstMail({backArrow, downloadButton, rubbishButton, rateStarButton, zoomImage,backButton, toggleSelectMail}) {
+function SecondMail({backArrow, downloadButton, rubbishButton, rateStarButton, zoomImage,backButton, toggleSelectMail}) {
     return (
       <main className="email-view">
         <nav className="email-toolbar">
@@ -22,14 +22,14 @@ function FirstMail({backArrow, downloadButton, rubbishButton, rateStarButton, zo
           </ul>
           <div className="space"></div>
           <div>
-            <p>1 of 5</p>
+            <p>2 of 5</p>
             <button>&lt;</button>
             <button>&gt;</button>
           </div>
         </nav>
         <article className="email-content">
           <div className="title">
-            <h1>Cloud Recording - Nicolas Marcoras Personal Meeting Room is available</h1>
+            <h1>Sean Davison has joined your personal Meeting Room</h1>
           </div>
           <header className="email-content--header">
             <div className="avatar"></div>
@@ -45,7 +45,7 @@ function FirstMail({backArrow, downloadButton, rubbishButton, rateStarButton, zo
               </div>
             </div>
             <div className="date-info">
-              <p>17 March 2021, 09:33</p>
+              <p>18 February 2021, 10:33</p>
             </div>
             <div className="email-action-icons">
               <ul>
@@ -83,4 +83,4 @@ function FirstMail({backArrow, downloadButton, rubbishButton, rateStarButton, zo
     )
   }
 
-  export default FirstMail
+  export default SecondMail

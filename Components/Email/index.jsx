@@ -2,7 +2,6 @@ function Email({index, email, toggleRead, toggleStar, toggleSelectMail}) {
     return(
       <li            
             key={index}
-            onClick={() => toggleSelectMail(email)}
             className={`email ${email.read ? 'read' : 'unread'}`}
             >
               <div className="select">
@@ -21,8 +20,8 @@ function Email({index, email, toggleRead, toggleStar, toggleSelectMail}) {
                   onChange={() => toggleStar(email)}
                 />
               </div>
-              <div className="sender">{email.sender}</div>
-              <div className="title">{email.title}</div>
+              <div className="sender" onClick={() => toggleSelectMail(email)}>{email.sender}</div>
+              <div className="title" onClick={() => toggleSelectMail(email)}>{email.title}</div>
             </li>
     )
 }

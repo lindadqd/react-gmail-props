@@ -1,5 +1,6 @@
 import Email from "../Email"
 
+
 function Emails({filteredEmails, toggleRead, toggleStar, toggleSelectMail}) {
     return (
         <main className="emails">
