@@ -2,11 +2,14 @@
 
 
 
-function FirstMail({backArrow, downloadButton, rubbishButton, rateStarButton, zoomImage}) {
+function FirstMail({backArrow, downloadButton, rubbishButton, rateStarButton, zoomImage,backButton, toggleSelectMail}) {
     return (
       <main className="email-view">
         <nav className="email-toolbar">
           <ul>
+            <li>
+              <img className="icon" src={backButton} alt="back button" onClick={() => toggleSelectMail(null)} />
+            </li>
             <li>
               <img className="icon" src={backArrow} alt="reply button" />
             </li>

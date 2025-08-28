@@ -1,8 +1,9 @@
-function Email({index, email, toggleRead, toggleStar}) {
+function Email({index, email, toggleRead, toggleStar, toggleSelectMail}) {
     return(
-      <li
-              key={index}
-              className={`email ${email.read ? 'read' : 'unread'}`}
+      <li            
+            key={index}
+            onClick={() => toggleSelectMail(email)}
+            className={`email ${email.read ? 'read' : 'unread'}`}
             >
               <div className="select">
                 <input
