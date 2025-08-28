@@ -6,6 +6,13 @@ import './styles/App.css'
 import Header from '../Components/Header'
 import LeftMenu from '../Components/Left-Menu'
 import Emails from '../Components/Emails'
+import FirstMail from '../Components/FirstMail'
+import zoomImage from './assets/images/zoom-logo-png.webp'
+import backArrow from './assets/icons/back-arrow.png'
+import downloadButton from './assets/icons/download-button.png'
+import rateStarButton from './assets/icons/rate-star-button.png'
+import rubbishButton from './assets/icons/rubbish-bin-delete-button.png'
+
 const getReadEmails = emails => emails.filter(email => !email.read)
 
 const getStarredEmails = emails => emails.filter(email => email.starred)
@@ -45,13 +52,17 @@ function App() {
 
   return (
     <div className="app">
-      
+
       <Header />
       <LeftMenu currentTab={ currentTab} setCurrentTab={setCurrentTab} setHideRead = {setHideRead} unreadEmails = {unreadEmails} starredEmails = {starredEmails} hideRead = {hideRead}/>
       
-      <Emails filteredEmails = {filteredEmails} toggleRead = {toggleRead} toggleStar = {toggleStar}/>
+      
+    
+
+      <FirstMail backArrow = {backArrow} downloadButton = {downloadButton} rubbishButton = {rubbishButton} rateStarButton = {rateStarButton} zoomImage = {zoomImage} />
 
     </div>
+
   )
 }
 
